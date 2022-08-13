@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Prompt:wght@100;400;700&family=Source+Serif+Pro:wght@200;400&display=swap');
+
+:root{
+    color: #e9ecef;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #343a40;
+}
+.boards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.board{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #0C2D48 ;
+    border: 1px solid #EAEFF211;
+}
+h3{
+    padding: 16px;
+    margin: 0;
+    color: #FD951Fcc;
+}
+.dropzone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20vh;
+    background-color:#EAEFF211;
+    border-radius: 4px;
+    overflow-x: hidden;
+}
+.dropzone::-webkit-scrollbar{
+    background-color: #0C2D4811;
+    width: 3px;
+}
+.card{
+    width: 80%;
+    color:#000000;
+    margin: 25px 0;
+    background-color: #EAEFF211;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px #FD951Fcc;
+}
+.light{
+    background-color: #5c7cfa11;
+}
+.card, .dropzone{
+    transition: 0.6s;
+}
+.isdraggin{
+    cursor: move;
+    opacity: 0.3;
+}
+.isover{
+    background-color: #c3fae8cc;
+}
